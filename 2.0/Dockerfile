@@ -46,4 +46,4 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 
 EXPOSE 9200 9300
 
-CMD ["elasticsearch"]
+CMD ["elasticsearch", "-Des.network.host=0.0.0.0"]
